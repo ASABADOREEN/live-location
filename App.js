@@ -17,14 +17,15 @@ async function GetLocation(){
     }
   let coords = await Location.getCurrentPositionAsync({});
 
-  alert(JSON.stringify(coords))
-    }
+    
+    alert(JSON.stringify(coords))
+  }
   
   
   
   return (
     <View style={styles.container}>
-     <Button title = "Show My Location" onPress={GetLocation}/>
+     <Button title = "Location" onPress={GetLocation}/>
       <StatusBar style="auto" />
     </View>
   );
@@ -37,4 +38,5 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+ 
 });
